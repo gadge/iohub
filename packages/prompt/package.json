@@ -1,0 +1,42 @@
+{
+  "name": "@iohub/prompt",
+  "version": "0.0.0",
+  "description": "Interactive CLI prompts for selecting files, folders, and extensions using Inquirer, with beautiful formatting and logging",
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+   "index.js"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@inquirer/checkbox": "^4.1.4",
+    "@iohub/collect": "workspace:^",
+    "@spare/deco-path": "^0.16.24",
+    "@spare/logger": "^0.16.24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadge/iohub.git"
+  },
+  "keywords": [
+    "iohub",
+    "nodejs",
+    "cli",
+    "inquirer",
+    "interactive-prompt",
+    "file-selection",
+    "user-interface"
+  ],
+  "author": "Hoyeung Wong",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/gadge/iohub"
+  },
+  "homepage": "https://github.com/gadge/iohub#readme"
+}
