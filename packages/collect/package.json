@@ -1,0 +1,44 @@
+{
+  "name": "@iohub/collect",
+  "version": "0.0.0",
+  "description": "Powerful utilities for collecting and filtering files and directories in Node.js, with support for async operations and distinct extension gathering",
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@iohub/pathinfo": "workspace:^",
+    "@orche/collect": "^0.0.1",
+    "@orche/distinct": "^0.0.1"
+  },
+  "devDependencies": {
+    "@iohub/iter": "workspace:^"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadge/iohub.git"
+  },
+  "keywords": [
+    "iohub",
+    "nodejs",
+    "cli",
+    "filesystem",
+    "file-collection",
+    "directory-traversal",
+    "async-fs"
+  ],
+  "author": "Hoyeung Wong",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/gadge/iohub"
+  },
+  "homepage": "https://github.com/gadge/iohub#readme"
+}
