@@ -1,0 +1,42 @@
+{
+  "name": "@iohub/sizeinfo",
+  "version": "0.0.0",
+  "description": "Smart utilities for converting file sizes to human-readable formats with customizable decimal and binary scale conversions",
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@aryth/math": "^0.7.7"
+  },
+  "devDependencies": {
+    "systeminformation": "^5.25.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadge/iohub.git"
+  },
+  "keywords": [
+    "iohub",
+    "nodejs",
+    "cli",
+    "file-size",
+    "human-readable",
+    "byte-conversion",
+    "size-formatting"
+  ],
+  "author": "Hoyeung Wong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gadge/iohub"
+  },
+  "homepage": "https://github.com/gadge/iohub#readme"
+}
