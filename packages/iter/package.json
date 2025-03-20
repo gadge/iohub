@@ -1,0 +1,39 @@
+{
+  "name": "@iohub/iter",
+  "version": "0.0.0",
+  "description": "Flexible async iterators for recursive directory traversal in Node.js, with customizable filtering and path transformation",
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@orche/collect": "^0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadge/iohub.git"
+  },
+  "keywords": [
+    "iohub",
+    "nodejs",
+    "cli",
+    "async-iterator",
+    "directory-traversal",
+    "recursive-search",
+    "filesystem"
+  ],
+  "author": "Hoyeung Wong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gadge/iohub"
+  },
+  "homepage": "https://github.com/gadge/iohub#readme"
+}
