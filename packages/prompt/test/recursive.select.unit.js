@@ -1,7 +1,7 @@
-import { join }                       from 'node:path'
-import { promptDocs, promptDirs } from '../src/index.js'
+import { join }                   from 'node:path'
+import { promptDirs, promptDocs } from '../src/index.js'
 
-const SOURCE = 'G:\\barencha'
+const SOURCE = '..'
 
 async function selector(source) {
   const list = this ?? []

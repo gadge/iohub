@@ -1,4 +1,5 @@
 import { $, says }    from '@spare/logger'
+import { test }       from 'node:test'
 import { humanScale } from '../src/humanScale.js'
 
 const candidates = {
@@ -9,6 +10,8 @@ const candidates = {
   used: 25179045888,
 }
 
-for (let [ key, num ] of Object.entries(candidates)) {
-  says[key]($.input(num).output(humanScale(num)))
-}
+test('humanScale', () => {
+  for (let [ key, num ] of Object.entries(candidates)) {
+    says[key]($.input(num).output(humanScale(num)))
+  }
+})

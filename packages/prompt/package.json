@@ -5,7 +5,7 @@
   "type": "module",
   "exports": "./index.js",
   "files": [
-   "index.js"
+    "index.js"
   ],
   "engines": {
     "node": ">=22.0.0"
@@ -18,7 +18,7 @@
     "@inquirer/checkbox": "^4.1.4",
     "@iohub/collect": "workspace:^",
     "@spare/deco-path": "^0.16.24",
-    "@spare/logger": "^0.16.24"
+    "@spare/plot": "^0.16.24"
   },
   "repository": {
     "type": "git",

@@ -1,26 +1,28 @@
-import checkbox                                      from '@inquirer/checkbox'
-import { collectExts, collectFiles, collectFolders } from '@iohub/collect'
-import { acPath }                                    from '@spare/deco-path'
-import { ros }                                       from '@spare/logger'
+import checkbox                                  from '@inquirer/checkbox'
+import { collectDirs, collectDocs, collectExts } from '@iohub/collect'
+import { acPath }                                from '@spare/deco-path'
+import { ac }                                    from '@spare/plot'
 
 export async function promptExts(source) {
   const choices = await collectExts(source)
   return !choices.length
     ? []
-    : checkbox({ message: `select [${acPath(source)}]${ros('extension')}(s)`, choices: choices, pageSize: 12 })
+    : checkbox({
+      message: `select [${acPath(source)}] ${ac('extension')}(s)`, choices: choices, pageSize: 12,
+    })
 }
 
 export async function promptDocs(source) {
-  const choices = await collectFiles(source)
+  const choices = await collectDocs(source)
   return !choices.length
     ? []
-    : checkbox({ message: `select [${acPath(source)}] ${ros('docs')}(s)`, choices: choices, pageSize: 24 })
+    : checkbox({ message: `select [${acPath(source)}] ${ac('docs')}(s)`, choices: choices, pageSize: 24 })
 }
 
 export async function promptDirs(source) {
-  const choices = await collectFolders(source)
+  const choices = await collectDirs(source)
   return !choices.length
     ? []
-    : checkbox({ message: `select [${acPath(source)}] ${ros('dir')}(s)`, choices: choices, pageSize: 18 })
+    : checkbox({ message: `select [${acPath(source)}] ${ac('dir')}(s)`, choices: choices, pageSize: 18 })
 }
 

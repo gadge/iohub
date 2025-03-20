@@ -4,7 +4,7 @@ import { test }                 from 'node:test'
 import { recurLot }             from '../src/recur.js'
 
 test('recurLot', async () => {
-  const SRC = 'G:\\advertisement asset\\pantone'
+  const SRC = 'G:\\library blaustein\\semiotics'
   for await (const list of recurLot(SRC)) {
     const fades = Fades.build(list.length)
     says['folder'](decoPath(list.dir))
