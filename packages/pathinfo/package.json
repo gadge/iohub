@@ -1,0 +1,38 @@
+{
+  "name": "@iohub/pathinfo",
+  "version": "0.0.0",
+  "description": "Efficient Node.js utilities for path manipulation, analysis, and validation with support for name, extension, and directory operations",
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadge/iohub.git"
+  },
+  "keywords": [
+    "iohub",
+    "nodejs",
+    "cli",
+    "path-manipulation",
+    "file-extension",
+    "path-validation",
+    "filesystem-utils"
+  ],
+  "author": "Hoyeung Wong",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/gadge/iohub"
+  },
+  "homepage": "https://github.com/gadge/iohub#readme"
+}
