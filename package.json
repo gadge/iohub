@@ -1,0 +1,60 @@
+{
+  "name": "iohub",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-all": "node --test --test-concurrency=4 --experimental-test-coverage",
+    "test": "node --test ./packages/*/test/*.test.js --experimental-test-coverage",
+    "upint": "pnpm up -i -r --latest",
+    "check": "pnpm outdated",
+    "changeset-add": "pnpm changeset add",
+    "changeset-ver": "pnpm changeset version",
+    "changeset-pub": "pnpm changeset publish",
+    "build": "rollup -c rollup.config.js",
+    "watch": "rollup -c rollup.config.js -w"
+  },
+  "keywords": [
+    "iohub",
+    "nodejs",
+    "cli"
+  ],
+  "author": "Hoyeung Wong",
+  "license": "BSD",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@acq/path": "^0.4.0",
+    "@changesets/cli": "^2.28.1",
+    "@orche/collect": "^0.0.1",
+    "@orche/distinct": "^0.0.1",
+    "@orche/reduce": "^0.0.1",
+    "@palett/flopper": "^0.12.26",
+    "@palett/munsell": "^0.12.26",
+    "@palett/nuance-midtone": "^0.12.26",
+    "@palett/nuance-ubitone": "^0.12.26",
+    "@palett/presets": "^0.12.26",
+    "@rollup/plugin-json": "^6.1.0",
+    "@spare/deco-path": "^0.16.24",
+    "@spare/logger": "^0.16.24",
+    "@spare/node": "^0.16.24",
+    "@spare/plot": "^0.16.24",
+    "@spare/serial": "^0.16.24",
+    "@texting/enum-chars": "^0.2.3",
+    "@texting/padder": "^0.2.3",
+    "@texting/splitter": "^0.2.3",
+    "@typen/enum-data-types": "^0.2.0",
+    "@vect/entries-init": "^0.8.4",
+    "@vect/object-init": "^0.8.4",
+    "@vect/object-mapper": "^0.8.4",
+    "@vect/vector-algebra": "^0.8.4",
+    "@vect/vector-mapper": "^0.8.4",
+    "@vect/vector-zipper": "^0.8.4",
+    "openai": "^4.88.0",
+    "rollup": "^4.36.0",
+    "rollup-plugin-fileinfo": "^0.3.8",
+    "yocto-spinner": "^0.2.1"
+  }
+}

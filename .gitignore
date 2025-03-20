@@ -1,0 +1,8 @@
+.idea
+node_modules
+dist
+pnpm-lock.yaml
+service
+static
+archive
+.vscode
