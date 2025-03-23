@@ -1,6 +1,6 @@
 {
   "name": "@iohub/sizeinfo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Smart utilities for converting file sizes to human-readable formats with customizable decimal and binary scale conversions",
   "type": "module",
   "exports": "./index.js",

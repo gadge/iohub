@@ -1,6 +1,6 @@
 {
   "name": "@iohub/collect",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Powerful utilities for collecting and filtering files and directories in Node.js, with support for async operations and distinct extension gathering",
   "type": "module",
   "exports": "./index.js",

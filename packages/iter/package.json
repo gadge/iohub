@@ -1,6 +1,6 @@
 {
   "name": "@iohub/iter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Flexible async iterators for recursive directory traversal in Node.js, with customizable filtering and path transformation",
   "type": "module",
   "exports": "./index.js",
