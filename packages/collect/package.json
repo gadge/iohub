@@ -1,6 +1,6 @@
 {
   "name": "@iohub/collect",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Powerful utilities for collecting and filtering files and directories in Node.js, with support for async operations and distinct extension gathering",
   "type": "module",
   "exports": "./index.js",
@@ -16,6 +16,7 @@
   "scripts": {},
   "dependencies": {
     "@iohub/pathinfo": "workspace:^",
+    "@iohub/iter": "^0.0.3",
     "@orche/collect": "^0.0.1",
     "@orche/distinct": "^0.0.1"
   },

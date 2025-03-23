@@ -1,6 +1,6 @@
 {
   "name": "@iohub/sizeinfo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Smart utilities for converting file sizes to human-readable formats with customizable decimal and binary scale conversions",
   "type": "module",
   "exports": "./index.js",
@@ -15,7 +15,7 @@
   },
   "scripts": {},
   "dependencies": {
-    "@aryth/math": "^0.7.7"
+    "@aryth/math": "^0.7.8"
   },
   "devDependencies": {
     "systeminformation": "^5.25.11"

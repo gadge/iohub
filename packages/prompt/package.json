@@ -1,6 +1,6 @@
 {
   "name": "@iohub/prompt",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Interactive CLI prompts for selecting files, folders, and extensions using Inquirer, with beautiful formatting and logging",
   "type": "module",
   "exports": "./index.js",
@@ -17,8 +17,8 @@
   "dependencies": {
     "@inquirer/checkbox": "^4.1.4",
     "@iohub/collect": "workspace:^",
-    "@spare/deco-path": "^0.16.25",
-    "@spare/plot": "^0.16.25"
+    "@spare/deco-path": "^0.16.26",
+    "@spare/plot": "^0.16.26"
   },
   "repository": {
     "type": "git",
