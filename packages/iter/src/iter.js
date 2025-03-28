@@ -1,23 +1,23 @@
 import { readdir } from 'node:fs/promises'
-import { join }    from 'node:path'
-import { DIRENT }  from './assets/constants.js'
+import { DIRENT } from './utils/constants.js'
+import { elab }   from './utils/elab.js'
 
 export async function* iterDoc(source) {
-  const { doc, pipe = join } = this ?? {}
+  const { doc, pipe = elab } = this ?? {}
   const dirents = await readdir(source, DIRENT)
   for (const dirent of dirents) {
     if (dirent.isFile() && (doc?.(dirent.name) ?? true)) {
-      yield pipe(source, dirent.name)
+      yield pipe(dirent.name, source)
     }
   }
 }
 
 export async function* iterDir(source) {
-  const { dir, pipe = join } = this ?? {}
+  const { dir, pipe = elab } = this ?? {}
   const dirents = await readdir(source, DIRENT)
   for (const dirent of dirents) {
     if (dirent.isDirectory() && (dir?.(dirent.name) ?? true)) {
-      yield pipe(source, dirent.name)
+      yield pipe(dirent.name, source)
     }
   }
 }
