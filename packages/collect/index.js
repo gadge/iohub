@@ -16,7 +16,7 @@ const collectNames = async source => (await collectDocItems(source)).map(({ name
 
 const collectNameExts = async source => (await collectDocItems(source)).map(({ name }) => pathToNameExt(name));
 
-const EXT = { pipe: (dir, doc) => extname(doc) };
+const EXT = { pipe: extname };
 const collectExts = async source => await asyncDistinct(iterDoc.call(EXT, source));
 
 const collectDirItems = async source => (await readdir(source, DIRENT)).filter(d => d.isDirectory());

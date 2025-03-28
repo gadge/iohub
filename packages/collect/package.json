@@ -15,9 +15,8 @@
   },
   "scripts": {},
   "dependencies": {
+    "@iohub/iter": "workspace:^",
     "@iohub/pathinfo": "workspace:^",
-    "@iohub/iter": "^0.0.3",
-    "@orche/collect": "^0.0.1",
     "@orche/distinct": "^0.0.1"
   },
   "devDependencies": {

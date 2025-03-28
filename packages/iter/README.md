@@ -66,7 +66,7 @@ for await (const group of recurLot('src')) {
 const options = {
   doc: name => name.endsWith('.js'), // Filter files
   dir: name => !name.startsWith('.'), // Filter directories
-  pipe: (dir, name) => `${dir}/${name}` // Custom path joining
+  pipe: (name, dir) => `${dir}/${name}`, // Custom path joining
 }
 
 for await (const file of recurDoc.call(options, 'src')) {

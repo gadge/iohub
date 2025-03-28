@@ -1,5 +1,6 @@
 import { join }                   from 'node:path'
 import { promptDirs, promptDocs } from '../src/index.js'
+import { test } from 'node:test'
 
 const SOURCE = '..'
 

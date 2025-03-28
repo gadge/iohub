@@ -1,5 +1,7 @@
 import { access, constants } from 'node:fs/promises';
-import { basename, extname, dirname } from 'node:path';
+import { extname, basename, dirname } from 'node:path';
+
+const pathToExt = extname;
 
 const pathToName = filePath => basename(filePath, extname(filePath));
 
@@ -27,4 +29,4 @@ const exists = async path => {
   }
 };
 
-export { exists, pathToEntry, pathToInfo, pathToName, pathToNameExt };
+export { exists, pathToEntry, pathToExt, pathToInfo, pathToName, pathToNameExt };

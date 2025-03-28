@@ -11,10 +11,10 @@ test('iterDoc', async () => {
     // doc: (name) => /\.txt$/.test(name)
   }
   let i = 0
-  says['searching'](SOURCE)
+  says.searching(SOURCE)
   for await (let path of iterDoc.call(config, SOURCE)) {
-    says['file'](pad(i++, 2), ac(path))
+    says.file(pad(i++, 2), ac(path))
   }
-  says['searching'](`found (${i}) files`)
+  says.searching(`found (${i}) files`)
 })
 

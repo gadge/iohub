@@ -8,21 +8,21 @@ const SOURCE = 'G:\\library blaustein\\semiotics'
 test('recurDoc', async () => {
   const config = {
     dir: name => ![ 'test', 'archive' ].includes(name),
-    pipe: (source, name) => [ source, name ],
+    pipe: (name, dir) => [ name, dir ],
     // doc: (name) => /\.txt$/.test(name)
   }
   let i = 0
-  says['searching'](SOURCE)
+  says.searching(SOURCE)
   const folders = {}
-  for await (let [ source, name ] of recurDoc.call(config, SOURCE)) {
-    if (!(source in folders)) {
-      folders[source] = []
-      says['folder'](ac(source))
+  for await (let [ name, base ] of recurDoc.call(config, SOURCE)) {
+    if (!(base in folders)) {
+      folders[base] = []
+      says.folder(ac(base))
     }
-    folders[source].push(name)
-    says['file'](pad(i++, 2), ac(name))
+    folders[base].push(name)
+    says.file(pad(i++, 2), ac(name))
   }
-  says['searching'](`found (${i}) files`)
+  says.searching(`found (${i}) files`)
   // console.log(folders)
 })
 
