@@ -1,6 +1,7 @@
 import { access, constants }          from 'node:fs/promises'
 import { basename, dirname, extname } from 'node:path'
 
+export const pathToExt = extname
 
 export const pathToName = filePath => basename(filePath, extname(filePath))
 
