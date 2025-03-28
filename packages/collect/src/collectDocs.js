@@ -15,5 +15,5 @@ export const collectNames = async source => (await collectDocItems(source)).map(
 
 export const collectNameExts = async source => (await collectDocItems(source)).map(({ name }) => pathToNameExt(name))
 
-const EXT = { pipe: (dir, doc) => extname(doc) }
+const EXT = { pipe: extname }
 export const collectExts = async source => await asyncDistinct(iterDoc.call(EXT, source))
